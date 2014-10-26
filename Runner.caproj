@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Runner</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>e4dm5hvyndkj</unique-id>
+    <saved-with-version>17800</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+        <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>960</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder expanded="1">
+        <object-type name="Touch" sid="7204552042365433">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="background1" sid="5243022642519088">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="5487980449476951">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1205076128283597" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\ZSeba\Desktop\4784.image_2030D56F.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="newtrigger" sid="6150737801267262">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8630206770558653" speed="5">
+                    <frame duration="1" hotspotX="0.448" hotspotY="0.1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="background2" sid="9038454970513124">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="8466339056456504">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7472541400186228" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\ZSeba\Desktop\4784.image_2030D56F.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="destroyer" sid="403040792138688">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6590917233843625" speed="5">
+                    <frame duration="1" hotspotX="0.448" hotspotY="0.1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player" sid="7543897656882118">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="3348308113860006">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="6624849190353373">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9345189949743971" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZSeba\Desktop\uni\flyer\art\alienYellow_walk2.png">
+                        <collision-poly>
+                            <point x="0.283871" y="0.44" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.848387" y="0.235" />
+                            <point x="0.958064" y="0.5" />
+                            <point x="0.880645" y="0.815" />
+                            <point x="0.5" y="0.9" />
+                            <point x="0.158065" y="0.755" />
+                            <point x="0.0612903" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506024" original-source="C:\Users\ZSeba\Desktop\uni\flyer\art\alienYellow_walk1.png">
+                        <collision-poly>
+                            <point x="0.283871" y="0.44" />
+                            <point x="0.5" y="0.055" />
+                            <point x="0.848387" y="0.235" />
+                            <point x="0.96129" y="0.5" />
+                            <point x="0.880645" y="0.815" />
+                            <point x="0.5" y="0.9" />
+                            <point x="0.190323" y="0.705" />
+                            <point x="0.0967742" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Death" pingpong="0" repeatcount="1" repeatto="0" sid="3113405902087461" speed="8">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.506173" original-source="C:\Users\ZSeba\Desktop\uni\flyer\art\alienYellow_hurt.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.135802" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.855072" y="0.123457" />
+                            <point x="0.971014" y="0.493827" />
+                            <point x="0.913043" y="0.925926" />
+                            <point x="0.492754" y="0.987654" />
+                            <point x="0.231884" y="0.802469" />
+                            <point x="0.057971" y="0.493827" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="coin" pingpong="1" repeatcount="1" repeatto="0" sid="9351112470598011" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZSeba\Desktop\uni\flyer\art\alienYellow_walk2.png">
+                        <collision-poly>
+                            <point x="0.283871" y="0.44" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.848387" y="0.235" />
+                            <point x="0.958064" y="0.5" />
+                            <point x="0.880645" y="0.815" />
+                            <point x="0.5" y="0.9" />
+                            <point x="0.158065" y="0.755" />
+                            <point x="0.0612903" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZSeba\Desktop\uni\flyer\art\pickcoin.png">
+                        <collision-poly>
+                            <point x="0.283871" y="0.44" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.848387" y="0.235" />
+                            <point x="0.96129" y="0.5" />
+                            <point x="0.880645" y="0.815" />
+                            <point x="0.5" y="0.9" />
+                            <point x="0.158065" y="0.755" />
+                            <point x="0.0612903" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="flame" sid="5384178439398955">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="2210317196141878">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9836215582402544" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZSeba\Desktop\flyer\art\flame1.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.488889" />
+                            <point x="0.5" y="0.255556" />
+                            <point x="0.928571" y="0.122222" />
+                            <point x="0.863636" y="0.5" />
+                            <point x="0.772727" y="0.611111" />
+                            <point x="0.5" y="0.766667" />
+                            <point x="0.168831" y="0.711111" />
+                            <point x="0.266234" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.6875" hotspotY="0.642857" original-source="C:\Users\ZSeba\Desktop\flyer\art\flame2.png">
+                        <collision-poly>
+                            <point x="0.294643" y="0.471429" />
+                            <point x="0.5" y="0.228571" />
+                            <point x="0.919643" y="0.128571" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.8125" y="0.7" />
+                            <point x="0.5" y="0.9" />
+                            <point x="0.107143" y="0.828571" />
+                            <point x="0.276786" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="timertext" sid="7605166210367425">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="coin" sid="8272600963454141">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="7500029424009148">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="3729953971896219">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="11" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9783010525282641" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.142857" y="0.142857" />
+                            <point x="0.5" y="0" />
+                            <point x="0.857143" y="0.142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.857143" y="0.857143" />
+                            <point x="0.5" y="1" />
+                            <point x="0.142857" y="0.857143" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bug" sid="8565037189169877">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="3097139917395257">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="6734940303163636">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8132041661749506" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZSeba\Desktop\flyer\art\bonusbug1.png">
+                        <collision-poly>
+                            <point x="0.328125" y="0.35" />
+                            <point x="0.5" y="0.208333" />
+                            <point x="0.789063" y="0.225" />
+                            <point x="0.960938" y="0.5" />
+                            <point x="0.773438" y="0.758333" />
+                            <point x="0.5" y="0.783333" />
+                            <point x="0.328125" y="0.65" />
+                            <point x="0.210938" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZSeba\Desktop\flyer\art\bonusbug2.png">
+                        <collision-poly>
+                            <point x="0.273438" y="0.291667" />
+                            <point x="0.5" y="0.108333" />
+                            <point x="0.742188" y="0.275" />
+                            <point x="0.953125" y="0.5" />
+                            <point x="0.757813" y="0.741667" />
+                            <point x="0.5" y="0.866667" />
+                            <point x="0.273438" y="0.708333" />
+                            <point x="0.195313" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="8552599004878055">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="bird" sid="179381656068668">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="2610368616691842">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="7152730414677479">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="4605185955570188" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504425" original-source="C:\Users\ZSeba\Desktop\flyer\art\bluejay1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.318584" />
+                            <point x="0.5" y="0.20354" />
+                            <point x="0.71875" y="0.318584" />
+                            <point x="0.71875" y="0.495575" />
+                            <point x="0.960938" y="0.955752" />
+                            <point x="0.5" y="0.902655" />
+                            <point x="0.21875" y="0.752212" />
+                            <point x="0.078125" y="0.495575" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504425" original-source="C:\Users\ZSeba\Desktop\flyer\art\bluejay2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504425" original-source="C:\Users\ZSeba\Desktop\flyer\art\bluejay3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Eel" sid="6093285319518828">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="3841571602920398">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="5997653261711705">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3800373677256242" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50193" original-source="C:\Users\ZSeba\Desktop\flyer\art\zapper.png">
+                        <collision-poly>
+                            <point x="0.171875" y="0.042471" />
+                            <point x="0.5" y="0.003861" />
+                            <point x="0.875" y="0.030888" />
+                            <point x="0.5625" y="0.498069" />
+                            <point x="0.828125" y="0.957529" />
+                            <point x="0.5" y="0.996139" />
+                            <point x="0.125" y="0.969112" />
+                            <point x="0.375" y="0.498069" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="8675544429324303">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="platform" sid="9358344587647913">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="1697383758651479">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="1667618784291375">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="7333763347004719">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2012327728439084" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="floor2" sid="630634964351949">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3394764637772366">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="6964551835347012">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="9316036808377905">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6424096131864426" speed="5">
+                    <frame duration="1" hotspotX="-0.004" hotspotY="0.492">
+                        <image-point name="Imagepoint 1" x="1" y="0.488" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button" sid="5921447320464059">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="background3" sid="4393803713332331">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="8929268577316974">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3564037855563412" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\ZSeba\Desktop\4784.image_2030D56F.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="floor1" sid="386390139117753">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5513576863865827">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="10315926671927" speed="5">
+                    <frame duration="1" hotspotX="-0.008" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="-0.976" y="0.316" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bandicam_20131222_" sid="1371805146200033">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7752244715484297" speed="5">
+                    <frame duration="1" hotspotX="0.500928" hotspotY="0.5" original-source="C:\Users\ZSeba\Desktop\bandicam_2013-12-22_17-50-08-172.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button2" sid="7880158416114912">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="TextBox" sid="7351078496331588">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Bug2" sid="735997154816903">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="1004971220555246">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="9145758622613331">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7352855072439986" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZSeba\Desktop\flyer\art\bonusbug1.png">
+                        <collision-poly>
+                            <point x="0.328125" y="0.35" />
+                            <point x="0.5" y="0.208333" />
+                            <point x="0.789063" y="0.225" />
+                            <point x="0.960938" y="0.5" />
+                            <point x="0.773438" y="0.758333" />
+                            <point x="0.5" y="0.783333" />
+                            <point x="0.328125" y="0.65" />
+                            <point x="0.210938" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ZSeba\Desktop\flyer\art\bonusbug2.png">
+                        <collision-poly>
+                            <point x="0.273438" y="0.291667" />
+                            <point x="0.5" y="0.108333" />
+                            <point x="0.742188" y="0.275" />
+                            <point x="0.953125" y="0.5" />
+                            <point x="0.757813" y="0.741667" />
+                            <point x="0.5" y="0.866667" />
+                            <point x="0.273438" y="0.708333" />
+                            <point x="0.195313" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="2071546368833825">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5706125998619824" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bonusbug" sid="6522534145053084">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7783846881489929" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nacho\Dropbox\Universidad\Semestre 12\Taller de Videojuegos\Tareas\Grupales\Tarea 3\Hurryup\art\bonusbug1.png">
+                        <collision-poly>
+                            <point x="0.328125" y="0.35" />
+                            <point x="0.5" y="0.208333" />
+                            <point x="0.789063" y="0.225" />
+                            <point x="0.960938" y="0.5" />
+                            <point x="0.773438" y="0.758333" />
+                            <point x="0.5" y="0.783333" />
+                            <point x="0.328125" y="0.65" />
+                            <point x="0.210938" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder expanded="1">
+        <layout>Restaurant Minigame.xml</layout>
+        <layout>Start Game.xml</layout>
+        <layout>Game.xml</layout>
+        <layout>Game Over.xml</layout>
+    </layout-folder>
+    <event-folder expanded="1">
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Functions.xml</event-sheet>
+        <event-sheet>End Game events.xml</event-sheet>
+        <event-sheet>Start game events.xml</event-sheet>
+        <event-sheet>Restaurant Minigame events.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="0">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Function" uid="10" />
+        <global-instance type="Audio" uid="13">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder expanded="1">
+        <file name="146723__fins__coin-object.m4a" />
+        <file name="146723__fins__coin-object.ogg" />
+        <file name="128075_thatjeffcarter_jet-pack (mp3cut.net).m4a" />
+        <file name="128075_thatjeffcarter_jet-pack (mp3cut.net).ogg" />
+        <file name="DST-BlazeOn.ogg" />
+        <file name="SoundsCrate-SciFi-PowerUp1.m4a" />
+        <file name="SoundsCrate-SciFi-PowerUp1.ogg" />
+        <file name="92011_timbre_power-down-1-mp3 (mp3cut.net).m4a" />
+        <file name="92011_timbre_power-down-1-mp3 (mp3cut.net).ogg" />
+    </sounds-folder>
+    <music-folder expanded="1" />
+    <files-folder expanded="1">
+        <file-folder expanded="0" name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

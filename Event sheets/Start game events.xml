@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Start game events</name>
+    <events>
+        <event-block sid="9484461329564374">
+            <conditions>
+                <condition id="0" name="On clicked" sid="783360495940602" type="Button2" />
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="2253301946233754" type="System">
+                    <param id="0" name="Layout">&quot;Game&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

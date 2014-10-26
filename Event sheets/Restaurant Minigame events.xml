@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Restaurant Minigame events</name>
+    <events>
+        <event-block sid="988780544266834">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="3380841821234342" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="9463565517188775" type="Bug">
+                    <param id="0" name="X">floor(random(600))</param>
+                    <param id="1" name="Y">floor(random(400))</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Functions</name>
+    <events>
+        <event-block sid="4574603858238852">
+            <conditions>
+                <condition id="0" name="On function" sid="1439621782760443" type="Function">
+                    <param id="0" name="Name">&quot;Create&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="xshift" sid="1101631767594169" static="0" type="number">0</variable>
+                <variable constant="0" name="yshift" sid="6661498248597723" static="0" type="number">0</variable>
+                <variable constant="0" name="randy" sid="6029054563050074" static="0" type="number">0</variable>
+                <event-block collapsed="1" sid="1924832307131265">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="1587809786285552" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="1" name="Compare parameter" sid="4300540669862986" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3734049563173395" type="System">
+                            <param id="0" name="Variable">randy</param>
+                            <param id="1" name="Value">int(random(80,540))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="9840499371195945">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="2445382105807505" type="System">
+                                    <param id="0" name="Count">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="1848290937606106" type="System">
+                                    <param id="0" name="Object to create">coin</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">1040+xshift</param>
+                                    <param id="3" name="Y">randy</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="7902890092692826" type="coin">
+                                    <param id="0" name="Speed">gamespeed</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="9264182348039587" type="coin">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="6769804034162211" type="System">
+                                    <param id="0" name="Object to create">coin</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">1040+xshift</param>
+                                    <param id="3" name="Y">randy+40</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="8898014552669557" type="coin">
+                                    <param id="0" name="Speed">gamespeed</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="8825669811268273" type="coin">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="8624843186023984" type="System">
+                                    <param id="0" name="Variable">xshift</param>
+                                    <param id="1" name="Value">40</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5932049232605097">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="8587675353660437" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">71</param>
+                        </condition>
+                        <condition id="1" name="Compare parameter" sid="4491651284247512" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="3789191343199875" type="System">
+                            <param id="0" name="Object to create">bird</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">1080</param>
+                            <param id="3" name="Y">400</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="7281076908985465" type="bird">
+                            <param id="0" name="Speed">gamespeed+300</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="4560816269398158" type="bird">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6459472637879769">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="8209626938701542" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">40</param>
+                        </condition>
+                        <condition id="1" name="Compare parameter" sid="3062227929258249" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">70</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="676672327244784" type="System">
+                            <param id="0" name="Object to create">bird</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">1080</param>
+                            <param id="3" name="Y">500</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="4526386998552027" type="bird">
+                            <param id="0" name="Speed">gamespeed+300</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="417823866863844" type="bird">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5096539750443341">
+                    <conditions>
+                        <condition id="1" name="Compare parameter" sid="8499920271745066" type="Function">
+                            <param id="0" name="Index">0</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="4434916840941318" type="System">
+                            <param id="0" name="Object to create">Bug</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">1080</param>
+                            <param id="3" name="Y">int(random(400,550))</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="3862760725196387" type="Bug">
+                            <param id="0" name="Speed">gamespeed</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="3238319984752758" type="Bug">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4352133027240502">
+            <conditions>
+                <condition id="0" name="On function" sid="2345855667763393" type="Function">
+                    <param id="0" name="Name">&quot;Setgamespeed&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4914809902603729" type="System">
+                    <param id="0" name="Variable">gamespeed</param>
+                    <param id="1" name="Value">Function.Param(0)</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="8776040995921048" type="background1">
+                    <param id="0" name="Speed">gamespeed</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="517893167664376" type="background2">
+                    <param id="0" name="Speed">gamespeed</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="4371516791776173" type="Bug">
+                    <param id="0" name="Speed">gamespeed</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="7203500787629628" type="coin">
+                    <param id="0" name="Speed">gamespeed</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="2237159559509917" type="Eel">
+                    <param id="0" name="Speed">gamespeed</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="6344204580030338" type="bird">
+                    <param id="0" name="Speed">gamespeed+200</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4179217800778249">
+            <conditions>
+                <condition id="0" name="On function" sid="3479567311932636" type="Function">
+                    <param id="0" name="Name">&quot;Dead&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="6545741650028453" type="Bug">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="314786904525715" type="background1">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="1006092774145573" type="background2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="808052676416957" type="coin">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="3107937129294405" type="Eel">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="822103466234734" type="flame">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="8166619159201353" type="Player">
+                    <param id="0" name="Animation">&quot;Death&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="2831553773722165" type="Audio" />
+                <action id="0" name="Play" sid="1943990307485079" type="Audio">
+                    <param id="0" name="Audio file">92011_timbre_power-down-1-mp3 (mp3cut.net)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="6908007589668557" type="System">
+                    <param id="0" name="Layout">Game Over</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
